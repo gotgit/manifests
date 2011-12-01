@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="github"
+           fetch="git://github.com/gotgit/"
+           autodotgit="true" />
+  <default revision="master"
+           remote="github" />
+
+  <project path="src/agile_python"          name="doc-agile_python" />
+  <project path="src/bcp"                   name="doc-bcp" />
+  <project path="src/bug_tracking"          name="doc-bug_tracking" />
+  <project path="src/cvs_vs_starteam"       name="doc-cvs_vs_starteam" />
+  <project path="src/dns_howto"             name="doc-dns_howto" />
+  <project path="src/docbook_howto"         name="doc-docbook_howto" />
+  <project path="src/email_howto"           name="doc-email_howto" />
+  <project path="src/freemind"              name="doc-freemind" />
+  <project path="src/health"                name="doc-health" />
+  <project path="src/inn_howto"             name="doc-inn_howto" />
+  <project path="src/mailinglist"           name="doc-mailinglist" />
+  <project path="src/makefile_howto"        name="doc-makefile_howto" />
+  <project path="src/my.record"             name="doc-my.record" />
+  <project path="src/nightlybuild"          name="doc-nightlybuild" />
+  <project path="src/personal_firewall"     name="doc-personal_firewall" />
+  <project path="src/pgp"                   name="doc-pgp" />
+  <project path="src/program_rules"         name="doc-program_rules" />
+  <project path="src/python"                name="doc-python" />
+  <project path="src/search_engine"         name="doc-search_engine" />
+  <project path="src/svn_hooks"             name="doc-svn_hooks" />
+  <project path="src/website_howto"         name="doc-website_howto" />
+  <project path="src/whodo_howto"           name="doc-whodo_howto" />
+  <project path="src/wiki_howto"            name="doc-wiki_howto" />
+  <project path="doc"                       name="doc" revision="gh-pages">
+    <copyfile src="Makefile.tmpl" dest="src/Makefile.tmpl" />
+    <copyfile src="Makefile" dest="src/Makefile" />
+  </project>
+
+</manifest>
